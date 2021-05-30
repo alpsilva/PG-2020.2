@@ -33,19 +33,19 @@ v1, v2, v3 são vetores que formam uma base (tendo de ser linearmente independen
 
 ### Ferramentas básicas
 
--> produtoEscalar(vetor1, vetor2) => n; []  
+-> produtoEscalar(vetor1, vetor2) => n; [x]  
 vetor1 e vetor2 sendo dois vetores  
 n sendo o valor do produto escalar entre vetor1 e vetor2  
   
--> norma(vetor) => n; []  
+-> norma(vetor) => n; [x]  
 vetor é um vetor  
 n é um número real que representa a norma desse vetor  
   
--> normalize(vetor) => vetorNormalizado; []  
+-> normalize(vetor) => vetorNormalizado; [x]  
 vetor é um vetor  
 vetorNomalizado é o vetor normalizado  
   
--> cosseno(vetor1, vetor2) => angulo; []  
+-> cosseno(vetor1, vetor2) => angulo; [x]  
 vetor1 e vetor2 são vetores  
 angulo é um número real que representa o ângulo em radianos  
   
