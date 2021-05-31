@@ -1,14 +1,16 @@
-# classes
-from math import cos, frexp
+
+#import de classes
 from structures.vetor import Vetor
 
-# functions
+#import de functions
 from functions.produto_escalar import produtoEscalar
 from functions.norma import norma
 from functions.normalize import normalize
 from functions.cosseno import cosseno
 from functions.projecao import projecao
 from functions.produto_vetorial import produtoVetorial
+#from functions.reflexao import reflexao
+from functions.saoParalelos import saoParalelos
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -43,3 +45,20 @@ projecao_v1_v2.print()
 #teste da função produtoVetorial
 produto_vetorial = produtoVetorial(v1, v2)
 produto_vetorial.print()
+
+#teste da função reflexão (ainda não está feito)
+#reflexao = reflexao(v1,  v2)
+#reflexao.print()
+
+#teste da função saoParalelos
+b = saoParalelos(v1, v2)
+print("v1 e v2 são paralelos? ", b)
+
+v3 = Vetor(5, 5, 5)
+v4 = Vetor(10, 10, 10)
+b2 = saoParalelos(v3, v4)
+print("v3 e v4 são paralelos? ", b2)
+
+#teste da função saoOrtogonais
+
+#teste da função eLI
