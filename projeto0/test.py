@@ -10,7 +10,8 @@ from functions.cosseno import cosseno
 from functions.projecao import projecao
 from functions.produto_vetorial import produtoVetorial
 #from functions.reflexao import reflexao
-from functions.saoParalelos import saoParalelos
+from functions.sao_paralelos import saoParalelos
+from functions.sao_ortogonais import saoortogonais
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -60,5 +61,12 @@ b2 = saoParalelos(v3, v4)
 print("v3 e v4 são paralelos? ", b2)
 
 #teste da função saoOrtogonais
+b = saoortogonais(v1, v2)
+print("v1 e v2 são ortogonais? ", b)
+
+v5 = Vetor(-5, 1, 1)
+v6 = Vetor(1, 2, 3)
+b2 = saoortogonais(v5, v6)
+print("v5 e v6 são ortogonais? ", b2)
 
 #teste da função eLI
