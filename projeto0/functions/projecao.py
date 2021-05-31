@@ -4,6 +4,8 @@ from functions.norma import norma
 from functions.produto_escalar import produtoEscalar
 
 def projecao(vetor1, vetor2):
+    #Atenção: Essa função deve projetar o vetor1 no vetor2, mas a função do symbolab recebe a ordem ao contrário.
+    #Porém, acredito que está correto.
     pe = produtoEscalar(vetor1, vetor2)
     nq = math.pow(norma(vetor2), 2)
     l = pe / nq
