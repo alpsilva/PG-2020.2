@@ -49,11 +49,11 @@ vetorNomalizado é o vetor normalizado
 vetor1 e vetor2 são vetores  
 angulo é um número real que representa o ângulo em radianos  
   
--> projecao(vetor1, vetor2) => vetor3; []  
+-> projecao(vetor1, vetor2) => vetor3; [x]  
 vetor1 e vetor2 são vetores  
 vetor3 é o vetor-projeção do vetor1 no vetor2  
   
--> produtoVetorial(vetor1, vetor2) => vetor3; []  
+-> produtoVetorial(vetor1, vetor2) => vetor3; [x]  
 vetor1 e vetor2 são vetores  
 vetor3 é o vetor resultante do produto vetorial de vetor1 com vetor2  
   
@@ -61,11 +61,11 @@ vetor3 é o vetor resultante do produto vetorial de vetor1 com vetor2
 vetor1 e vetor2 são vetores  
 vetor3 é o vetor-reflexão do vetor1 em relação ao vetor3  
   
--> saoParalelos(vetor1, vetor2) => boolean; []  
+-> saoParalelos(vetor1, vetor2) => boolean; [x]  
 vetor1 e vetor2 são vetores  
 boolean é um valor booleano que afirma ou nega se o vetor1 é paralelo ao vetor2  
   
--> saoOrtogonais(vetor1, vetor2) => boolean; []  
+-> saoOrtogonais(vetor1, vetor2) => boolean; [x]  
 vetor1 e vetor2 são vetores  
 boolean é um valor booleano que afirma ou nega se vetor1 e vetor2 são ortogonais entre si  
   
