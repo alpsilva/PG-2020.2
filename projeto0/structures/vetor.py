@@ -3,3 +3,6 @@ class Vetor:
         self.x1 = x1
         self.x2 = x2
         self.x3 = x3
+
+    def print(self):
+        print(self.x1, self.x2, self.x3)
