@@ -1,6 +1,9 @@
 
 #import de classes
 from structures.vetor import Vetor
+from structures.ponto import Ponto
+from structures.reta import Reta
+from structures.plano import Plano
 
 #import de functions
 from functions.produto_escalar import produtoEscalar
@@ -11,7 +14,11 @@ from functions.projecao import projecao
 from functions.produto_vetorial import produtoVetorial
 #from functions.reflexao import reflexao
 from functions.sao_paralelos import saoParalelos
-from functions.sao_ortogonais import saoortogonais
+from functions.sao_ortogonais import saoOrtogonais
+from functions.diretor import diretor
+from functions.normal import normal
+from functions.e_paralelo import eParalelo
+from functions.e_ortogonal import eOrtogonal
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -61,12 +68,33 @@ b2 = saoParalelos(v3, v4)
 print("v3 e v4 são paralelos? ", b2)
 
 #teste da função saoOrtogonais
-b = saoortogonais(v1, v2)
+b = saoOrtogonais(v1, v2)
 print("v1 e v2 são ortogonais? ", b)
 
 v5 = Vetor(-5, 1, 1)
 v6 = Vetor(1, 2, 3)
-b2 = saoortogonais(v5, v6)
+b2 = saoOrtogonais(v5, v6)
 print("v5 e v6 são ortogonais? ", b2)
 
 #teste da função eLI
+
+#teste da funcao diretor
+pnt = Ponto(0, 0, 0)
+r1 = Reta(pnt, v6)
+d = diretor(r1)
+d.print()
+
+#teste da funcao normal
+pln = Plano(pnt, v3)
+n = normal(pln)
+n.print()
+
+#teste da funcao eParalelo
+r2 = Reta(pnt, v3)
+print("a reta r2 e paralela ao vetor v6?", eParalelo(r2, v6))
+print("a reta r2 e paralela ao vetor v4?", eParalelo(r2, v4))
+
+#teste da funcao eOrtogonal
+r3 = Reta(pnt, v5)
+print("a reta r3 e ortogonal ao vetor v4?", eOrtogonal(r3, v4))
+print("a reta r2 e ortogonal ao vetor v6?", eOrtogonal(r3, v6))

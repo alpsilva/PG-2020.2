@@ -74,20 +74,20 @@ boolean é um valor booleano que afirma ou nega se vetor1 e vetor2 são ortogona
 boolean é um valor booleano que afirma ou nega se vetor1, vetor2 e vetor3 são Linearmente Independentes
 
 ### Sobre objetos
-- [ ] `diretor(reta) => vetor;`
+- [x] `diretor(reta) => vetor;`
 reta é uma reta
 vetor é o vetor diretor da reta
 
-- [ ] `normal(plano) => vetor;`
+- [x] `normal(plano) => vetor;`
 plano é um plano
 vetor é o vetor normal do plano
 
-- [ ] `eParalelo(vetor, reta) => boolean;`
+- [x] `eParalelo(vetor, reta) => boolean;`
 vetor é um vetor
 reta é uma reta
 boolean é um valor booleano que afirma ou nega se o vetor é paralelo à reta
 
-- [ ] `eOrtogonal(vetor, plano) => boolean;`
+- [x] `eOrtogonal(vetor, plano) => boolean;`
 vetor é um vetor
 plano é um plano
 boolean é um valor booleano que afirma ou nega se o vetor é ortogonal ao plano
