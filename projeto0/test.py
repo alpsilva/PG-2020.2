@@ -26,6 +26,18 @@ v2 = Vetor(3, 2, 3)
 v1.print()
 v2.print()
 
+#teste dos metodos basicos da classe de vetor
+assert Vetor(1, 2, 3) == Vetor(1, 2, 3)
+assert Vetor(1, 3, 4) != Vetor(1, 1, 1)
+print('Igualdade entre vetores OK.')
+assert Vetor(1, 2, 3) * 2 == Vetor(2, 4, 6)
+assert Vetor(1, 2, 3) * 1 == Vetor(1, 2, 3)
+print('Produto de vetor por escalar OK.')
+assert Vetor(1, 2, 3) + Vetor(3,2,1) == Vetor(4, 4, 4)
+print('Soma de vetores OK')
+assert Vetor(1, 2, 3) - Vetor(1, 2, 3) == Vetor(0, 0, 0)
+print('Subtracao de vetores OK')
+
 #teste da função produtoEscalar
 produto_escalar = produtoEscalar(v1, v2)
 print(produto_escalar)
