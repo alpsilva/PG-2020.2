@@ -12,7 +12,7 @@ from functions.normalize import normalize
 from functions.cosseno import cosseno
 from functions.projecao import projecao
 from functions.produto_vetorial import produtoVetorial
-#from functions.reflexao import reflexao
+from functions.reflexao import reflexao
 from functions.sao_paralelos import saoParalelos
 from functions.sao_ortogonais import saoOrtogonais
 from functions.diretor import diretor
@@ -66,9 +66,12 @@ projecao_v1_v2.print()
 produto_vetorial = produtoVetorial(v1, v2)
 produto_vetorial.print()
 
-#teste da função reflexão (ainda não está feito)
-#reflexao = reflexao(v1,  v2)
-#reflexao.print()
+#teste da função reflexão
+vref1 = Vetor(1,0,0)
+vref2 = Vetor(0,1,0)
+reflexao = reflexao(vref1, vref2)
+print('Reflexao:')
+reflexao.print()
 
 #teste da função saoParalelos
 b = saoParalelos(v1, v2)
