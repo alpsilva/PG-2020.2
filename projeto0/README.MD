@@ -117,7 +117,7 @@ plano é um plano
 reta é uma reta
 boolean é um valor booleano que afirma ou nega que o plano seja complemento ortogonal da reta
 
-- [ ] `formaCartesiana(plano) => [a,b,c,d]`
+- [x] `formaCartesiana(plano) => [a,b,c,d]`
 plano é um plano
 [a,b,c,d] é um array com quatro números reais, onde a, ..., d são os coeficientes da equação que
 define o plano na forma cartesiana, da seguinte maneira
