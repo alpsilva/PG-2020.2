@@ -57,7 +57,7 @@ vetor3 é o vetor-projeção do vetor1 no vetor2
 vetor1 e vetor2 são vetores  
 vetor3 é o vetor resultante do produto vetorial de vetor1 com vetor2  
   
-- [ ] `reflexao(vetor1, vetor2) => vetor3;`
+- [x] `reflexao(vetor1, vetor2) => vetor3;`
 vetor1 e vetor2 são vetores  
 vetor3 é o vetor-reflexão do vetor1 em relação ao vetor3  
   

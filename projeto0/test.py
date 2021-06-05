@@ -12,7 +12,7 @@ from functions.normalize import normalize
 from functions.cosseno import cosseno
 from functions.projecao import projecao
 from functions.produto_vetorial import produtoVetorial
-#from functions.reflexao import reflexao
+from functions.reflexao import reflexao
 from functions.sao_paralelos import saoParalelos
 from functions.sao_ortogonais import saoOrtogonais
 from functions.diretor import diretor
@@ -25,6 +25,18 @@ v1 = Vetor(2, 3, 2)
 v2 = Vetor(3, 2, 3)
 v1.print()
 v2.print()
+
+#teste dos metodos basicos da classe de vetor
+assert Vetor(1, 2, 3) == Vetor(1, 2, 3)
+assert Vetor(1, 3, 4) != Vetor(1, 1, 1)
+print('Igualdade entre vetores OK.')
+assert Vetor(1, 2, 3) * 2 == Vetor(2, 4, 6)
+assert Vetor(1, 2, 3) * 1 == Vetor(1, 2, 3)
+print('Produto de vetor por escalar OK.')
+assert Vetor(1, 2, 3) + Vetor(3,2,1) == Vetor(4, 4, 4)
+print('Soma de vetores OK')
+assert Vetor(1, 2, 3) - Vetor(1, 2, 3) == Vetor(0, 0, 0)
+print('Subtracao de vetores OK')
 
 #teste da função produtoEscalar
 produto_escalar = produtoEscalar(v1, v2)
@@ -54,9 +66,12 @@ projecao_v1_v2.print()
 produto_vetorial = produtoVetorial(v1, v2)
 produto_vetorial.print()
 
-#teste da função reflexão (ainda não está feito)
-#reflexao = reflexao(v1,  v2)
-#reflexao.print()
+#teste da função reflexão
+vref1 = Vetor(1,0,0)
+vref2 = Vetor(0,1,0)
+reflexao = reflexao(vref1, vref2)
+print('Reflexao:')
+reflexao.print()
 
 #teste da função saoParalelos
 b = saoParalelos(v1, v2)
