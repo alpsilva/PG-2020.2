@@ -4,6 +4,7 @@ from structures.vetor import Vetor
 from structures.ponto import Ponto
 from structures.reta import Reta
 from structures.plano import Plano
+from structures.base import Base
 
 #import de functions
 from functions.produto_escalar import produtoEscalar
@@ -19,6 +20,8 @@ from functions.diretor import diretor
 from functions.normal import normal
 from functions.e_paralelo import eParalelo
 from functions.e_ortogonal import eOrtogonal
+
+from functions.ortogonalize import ortogonalize
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -113,3 +116,12 @@ print("a reta r2 e paralela ao vetor v4?", eParalelo(r2, v4))
 r3 = Reta(pnt, v5)
 print("a reta r3 e ortogonal ao vetor v4?", eOrtogonal(r3, v4))
 print("a reta r2 e ortogonal ao vetor v6?", eOrtogonal(r3, v6))
+
+
+#teste da função ortogonalize
+vb1 = Vetor(1, 0, 0)
+vb2 = Vetor(1, 2, 0)
+vb3 = Vetor(0, 2, 2)
+base = Base(vb1, vb2, vb3)
+baseOrtogonalizada = ortogonalize(base)
+baseOrtogonalizada.print()
