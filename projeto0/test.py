@@ -22,6 +22,7 @@ from functions.e_paralelo import eParalelo
 from functions.e_ortogonal import eOrtogonal
 
 from functions.ortogonalize import ortogonalize
+from functions.mude_base import mudebase
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -125,3 +126,17 @@ vb3 = Vetor(0, 2, 2)
 base = Base(vb1, vb2, vb3)
 baseOrtogonalizada = ortogonalize(base)
 baseOrtogonalizada.print()
+
+#teste da funcao mudeBase
+
+v_aux1 = Vetor(1, 0, 1)
+v_aux2 = Vetor(1, 1, 0)
+v_aux3 = Vetor(2, 2, -3)
+base1 = Base(v_aux1, v_aux2, v_aux3)
+
+v1 = Vetor(3, 1, 1)
+
+# da base canonica para base 1
+new_coord = mudebase(v1, base1)
+print(new_coord[0], new_coord[1], new_coord[2])
+# FALTA VERIFICAR SE ESTÁ CORRETO

@@ -158,16 +158,10 @@ objeto é a reta ou o plano correspondente à interseção do plano1 com o plano
 base é uma base
 baseOrtogonalizada é uma base que sofreu o processo de Gram-schmidt na ordem da base
 
-- [ ] `mudeBase(vetor, base) => [x, y, z];`
+- [x] `mudeBase(vetor, base) => [x, y, z];`
 vetor é um vetor
 base é uma base
 [x, y, z] é um array de três valores reais que representam as coordenadas do vetor na base
-
-- [ ] `mudeBase([x1, y1, z1], base1, base2) => [x2, y2, z2];`
-[x1, y1, z1] é um array de três valores reais x1, x2 e x3 que representam as coordenadas de algum
-vetor na base1
-base1 e base2 são bases
-[x2, y2, z2] é um array de três valores reais que representam as coordenadas desse vetor na base2
 
 ### Transformações Lineares
 - [ ] `rotação(vetor, ângulo, sentido) => vetorRotacionado;`
