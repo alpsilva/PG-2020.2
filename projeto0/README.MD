@@ -154,7 +154,7 @@ plano1 e plano2 são planos
 objeto é a reta ou o plano correspondente à interseção do plano1 com o plano2 (se houver)
 
 ### Base
-- [ ] `ortogonalize(base) => (baseOrtogonalizada);`
+- [x] `ortogonalize(base) => (baseOrtogonalizada);`
 base é uma base
 baseOrtogonalizada é uma base que sofreu o processo de Gram-schmidt na ordem da base
 
