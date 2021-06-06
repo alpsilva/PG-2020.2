@@ -5,3 +5,8 @@ class Base:
         self.v3 = v3
 
         #v1, v2 e v3 são vetores que formam a base e precisam ser linearmente independentes.
+
+    def print(self):
+        self.v1.print()
+        self.v2.print()
+        self.v3.print()

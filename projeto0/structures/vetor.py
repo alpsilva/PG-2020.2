@@ -11,7 +11,14 @@ class Vetor:
     # Multiplicacao por numero real.
     def __mul__(self, num):
         return Vetor(self.x1 * num, self.x2 * num, self.x3 * num)
-    
+
+    # Divisão por numero real.
+    def __truediv__(self, num):
+        if (num != 0):
+            return Vetor(self.x1 / num, self.x2 / num, self.x3 / num)
+        else:
+            return Vetor(0, 0, 0)
+
     # Adicao entre vetores.
     def __add__(self, outro):
         return Vetor(self.x1 + outro.x1, self.x2 + outro.x2, self.x3 + outro.x3)
