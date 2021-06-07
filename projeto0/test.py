@@ -20,6 +20,7 @@ from functions.diretor import diretor
 from functions.normal import normal
 from functions.e_paralelo import eParalelo
 from functions.e_ortogonal import eOrtogonal
+from functions.e_li import eLI
 
 from functions.ortogonalize import ortogonalize
 from functions.mude_base import mudebase
@@ -96,6 +97,16 @@ b2 = saoOrtogonais(v5, v6)
 print("v5 e v6 são ortogonais? ", b2)
 
 #teste da função eLI
+array1 = [v3, v4]
+b3 = eLI(array1)
+print("v3 e v4 são LI? ", b3)
+
+v7 = Vetor(3, 5, 7)
+v8 = Vetor(11, 13, 17)
+v9 = Vetor(19, 23, 29)
+array2 = [v7, v8, v9]
+b4 = eLI(array2)
+print("v7, v8 e v9 são LI? ", b4)
 
 #teste da funcao diretor
 pnt = Ponto(0, 0, 0)
@@ -128,15 +139,22 @@ baseOrtogonalizada = ortogonalize(base)
 baseOrtogonalizada.print()
 
 #teste da funcao mudeBase
+# TODO ESSE BLOCO TA ERRADO
 
 v_aux1 = Vetor(1, 0, 1)
 v_aux2 = Vetor(1, 1, 0)
 v_aux3 = Vetor(2, 2, -3)
 base1 = Base(v_aux1, v_aux2, v_aux3)
 
-v1 = Vetor(3, 1, 1)
+v1 = Vetor(1, 0, 0)
+v2 = Vetor(0, 1, 0)
+v3 = Vetor(0, 0, 1)
 
 # da base canonica para base 1
 new_coord = mudebase(v1, base1)
 print(new_coord[0], new_coord[1], new_coord[2])
-# FALTA VERIFICAR SE ESTÁ CORRETO
+new_coord = mudebase(v2, base1)
+print(new_coord[0], new_coord[1], new_coord[2])
+new_coord = mudebase(v3, base1)
+print(new_coord[0], new_coord[1], new_coord[2])
+# TODO ESSE BLOCO TA ERRADO
