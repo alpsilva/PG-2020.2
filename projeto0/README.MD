@@ -69,7 +69,7 @@ boolean é um valor booleano que afirma ou nega se o vetor1 é paralelo ao vetor
 vetor1 e vetor2 são vetores  
 boolean é um valor booleano que afirma ou nega se vetor1 e vetor2 são ortogonais entre si  
   
-- [ ] `eLI([vetor1, ..., vetorn]) => boolean;`
+- [x] `eLI([vetor1, ..., vetorn]) => boolean;`
 [vetor1, vetor2, vetor3] é um array de três vetores
 boolean é um valor booleano que afirma ou nega se vetor1, vetor2 e vetor3 são Linearmente Independentes
 
