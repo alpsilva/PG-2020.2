@@ -16,12 +16,12 @@ def formaCartesiana(obj):
         
         a = obj.vetorDiretor.x2/obj.vetorDiretor.x1
         b = -1
-        c = obj.ponto.x2 - (a * obj.ponto.x1)
-        d = 0
+        c = 0
+        d = obj.ponto.x2 - (a * obj.ponto.x1)
         
-        e = obj.vetorDiretor.x3/obj.vetorDiretor.x2
-        f = -1
-        g = obj.ponto.x3 - (e * obj.ponto.x2)
-        h = 0
+        e = 0
+        f = obj.vetorDiretor.x3/obj.vetorDiretor.x2
+        g = -1
+        h = obj.ponto.x3 - (e * obj.ponto.x2)
         
         return [[a, b, c, d], [e, f, g, h]]
