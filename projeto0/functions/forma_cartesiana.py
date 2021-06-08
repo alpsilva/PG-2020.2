@@ -14,4 +14,14 @@ def formaCartesiana(obj):
     elif type(obj) is Reta:
         # formaCartesiana(reta)
         
+        a = obj.vetorDiretor.x2/obj.vetorDiretor.x1
+        b = -1
+        c = obj.ponto.x2 - (a * obj.ponto.x1)
+        d = 0
+        
+        e = obj.vetorDiretor.x3/obj.vetorDiretor.x2
+        f = -1
+        g = obj.ponto.x3 - (e * obj.ponto.x2)
+        h = 0
+        
         return [[a, b, c, d], [e, f, g, h]]
