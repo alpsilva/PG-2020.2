@@ -19,14 +19,20 @@ def projecao(vetor, obj):
         #vetor3 é o vetor projeção do vetor1 no vetor2
     elif type(obj) is Reta:
         # projecao(vetor, reta)
-        # n sei se esta certo, verifiquem
         pe = produtoEscalar(vetor, obj.vetorDiretor)
         nq = math.pow(norma(obj.vetorDiretor), 2)
         l = pe / nq
+        
         vetorProjetado = Vetor(obj.vetorDiretor.x1 * l, obj.vetorDiretor.x2 * l, obj.vetorDiretor.x3 * l)
         
     elif type(obj) is Plano:
         # projecao(vetor, plano)
-        vetorProjetado = "placeholder"
+        k = produtoEscalar(vetor, obj.vetorNormal) / produtoEscalar(obj.vetorNormal, obj.vetorNormal)
+        
+        x = vetor.x1 - (k * obj.vetorNormal.x1)
+        y = vetor.x2 - (k * obj.vetorNormal.x2)
+        z = vetor.x3 - (k * obj.vetorNormal.x3)
+        
+        vetorProjetado = Vetor(x, y, z)
         
     return vetorProjetado

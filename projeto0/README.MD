@@ -92,12 +92,12 @@ vetor é um vetor
 plano é um plano
 boolean é um valor booleano que afirma ou nega se o vetor é ortogonal ao plano
 
-- [ ] `projecao(vetor, reta) => vetorProjetado;`
+- [x] `projecao(vetor, reta) => vetorProjetado;`
 vetor é um vetor
 reta é uma reta
 vetorProjetado é o vetor projetado na reta
 
-- [ ] `projecao(vetor, plano) => vetorProjetado;`
+- [x] `projecao(vetor, plano) => vetorProjetado;`
 vetor é um vetor
 plano é um plano
 vetorProjetado é o vetor projetado no plano
