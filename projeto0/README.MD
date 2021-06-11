@@ -92,12 +92,12 @@ vetor é um vetor
 plano é um plano
 boolean é um valor booleano que afirma ou nega se o vetor é ortogonal ao plano
 
-- [ ] `projecao(vetor, reta) => vetorProjetado;`
+- [x] `projecao(vetor, reta) => vetorProjetado;`
 vetor é um vetor
 reta é uma reta
 vetorProjetado é o vetor projetado na reta
 
-- [ ] `projecao(vetor, plano) => vetorProjetado;`
+- [x] `projecao(vetor, plano) => vetorProjetado;`
 vetor é um vetor
 plano é um plano
 vetorProjetado é o vetor projetado no plano
@@ -123,7 +123,7 @@ plano é um plano
 define o plano na forma cartesiana, da seguinte maneira
 ax + by + cz + d = 0
 
-- [ ] `formaCartesiana(reta) => [[a,b,c,d],[e,f,g,h]]`
+- [x] `formaCartesiana(reta) => [[a,b,c,d],[e,f,g,h]]`
 [[a,b,c,d],[e,f,g,h]] é um array de dois arrays com quatro números reais, cada, onde a, ..., h são os
 coeficientes das equações que definem a reta cartesiana, da seguinte maneira
 ax + by + cz + d = 0
