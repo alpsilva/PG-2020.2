@@ -130,7 +130,7 @@ ax + by + cz + d = 0
 ex + fy + gz + h = 0
 
 ### Interseções
-- [ ] `interseção(reta1, reta2) => objeto;`
+- [x] `interseção(reta1, reta2) => objeto;`
 reta1 e reta2 são retas
 objeto é o ponto ou a reta correspondente à interseção da reta1 com a reta2 (se houver)
 
@@ -158,7 +158,7 @@ objeto é a reta ou o plano correspondente à interseção do plano1 com o plano
 base é uma base
 baseOrtogonalizada é uma base que sofreu o processo de Gram-schmidt na ordem da base
 
-- [ ] `mudeBase(vetor, base) => [x, y, z];`
+- [x] `mudeBase(vetor, base) => [x, y, z];`
 vetor é um vetor
 base é uma base
 [x, y, z] é um array de três valores reais que representam as coordenadas do vetor na base
