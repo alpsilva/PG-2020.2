@@ -29,6 +29,7 @@ from functions.sao_complementos_ortogonais import saoComplementosOrtogonaisPlano
 
 from functions.ortogonalize import ortogonalize
 from functions.mude_base import mudebase
+from functions.intersecao import intersecao
 
 #teste das classes de vetores
 v1 = Vetor(2, 3, 2)
@@ -186,3 +187,11 @@ print(new_coord[0], new_coord[1], new_coord[2])
 new_coord = mudebase(v3, base1)
 print(new_coord[0], new_coord[1], new_coord[2])
 # TODO ESSE BLOCO TA ERRADO
+
+
+# intersecao
+intersecaoRetaPlano = intersecao(r2, plano)
+print(intersecaoRetaPlano.x1, intersecaoRetaPlano.x2, intersecaoRetaPlano.x3)
+
+intersecaoRetaReta = intersecao(r1, r2)
+print(intersecaoRetaReta.x1, intersecaoRetaReta.x2, intersecaoRetaReta.x3)
