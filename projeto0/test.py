@@ -16,11 +16,14 @@ from functions.produto_vetorial import produtoVetorial
 from functions.reflexao import reflexao
 from functions.sao_paralelos import saoParalelos
 from functions.sao_ortogonais import saoOrtogonais
+from functions.e_li import eLI
+
 from functions.diretor import diretor
 from functions.normal import normal
 from functions.e_paralelo import eParalelo
 from functions.e_ortogonal import eOrtogonal
-from functions.e_li import eLI
+from functions.projecao import projecao
+from functions.componente_ortogonal import componenteOrtogonal
 
 from functions.ortogonalize import ortogonalize
 from functions.mude_base import mudebase
@@ -129,6 +132,15 @@ r3 = Reta(pnt, v5)
 print("a reta r3 e ortogonal ao vetor v4?", eOrtogonal(r3, v4))
 print("a reta r2 e ortogonal ao vetor v6?", eOrtogonal(r3, v6))
 
+#teste da função projecao
+
+#teste da funcao componente ortogonal
+vetorNormalPlano = Vetor (5, 5, 5)
+pontoPlano = Ponto(0, 0, 0)
+plano = Plano(pontoPlano, vetorNormalPlano)
+vetorOrtogonalPlano = Vetor(5, 5, 3)
+
+vetorComponenteOrtogonal = componenteOrtogonal(vetorOrtogonalPlano, plano)
 
 #teste da função ortogonalize
 vb1 = Vetor(1, 0, 0)
