@@ -24,6 +24,8 @@ from functions.e_paralelo import eParalelo
 from functions.e_ortogonal import eOrtogonal
 from functions.projecao import projecao
 from functions.componente_ortogonal import componenteOrtogonal
+from functions.sao_complementos_ortogonais import saoComplementosOrtogonais
+from functions.sao_complementos_ortogonais import saoComplementosOrtogonaisPlanoReta
 
 from functions.ortogonalize import ortogonalize
 from functions.mude_base import mudebase
@@ -138,9 +140,23 @@ print("a reta r2 e ortogonal ao vetor v6?", eOrtogonal(r3, v6))
 vetorNormalPlano = Vetor (5, 5, 5)
 pontoPlano = Ponto(0, 0, 0)
 plano = Plano(pontoPlano, vetorNormalPlano)
+
 vetorOrtogonalPlano = Vetor(5, 5, 3)
 
 vetorComponenteOrtogonal = componenteOrtogonal(vetorOrtogonalPlano, plano)
+vetorComponenteOrtogonal.print()
+
+#teste da função saoComponentesOrtogonais
+retaComponenteOrtogonal = Reta(pontoPlano, vetorComponenteOrtogonal)
+
+b = saoComplementosOrtogonais(retaComponenteOrtogonal, plano)
+print("São componentes ortogonais? ", b)
+
+#teste da função saoComponentesOrtogonaisPlanoReta
+
+b2 = saoComplementosOrtogonaisPlanoReta(plano, retaComponenteOrtogonal)
+print("São componentes ortogonais? (plano e reta) ", b2)
+
 
 #teste da função ortogonalize
 vb1 = Vetor(1, 0, 0)

@@ -102,17 +102,17 @@ vetor é um vetor
 plano é um plano
 vetorProjetado é o vetor projetado no plano
 
-- [ ] `componenteOrtogonal(vetor, plano) => vetor;`
+- [x] `componenteOrtogonal(vetor, plano) => vetor;`
 vetor é um vetor
 plano é um plano
 vetorOrtogonal é o componente ortogonal do vetor em relação ao plano
 
-- [ ] `saoComplementosOrtogonais(reta, plano) => boolean;`
+- [x] `saoComplementosOrtogonais(reta, plano) => boolean;`
 reta é uma reta
 plano é um plano
 boolean é um valor booleano que afirma ou nega que a reta seja complemento ortogonal do plano
 
-- [ ] `saoComplementosOrtogonais(plano, reta) => boolean;`
+- [x] `saoComplementosOrtogonais(plano, reta) => boolean;`
 plano é um plano
 reta é uma reta
 boolean é um valor booleano que afirma ou nega que o plano seja complemento ortogonal da reta
