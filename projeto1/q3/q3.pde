@@ -1,49 +1,44 @@
-float a, b; //<>//
-float r = -20;
-float rAux = -20;
-float x = -20;
-float pos = 0.1f;
-boolean posAux1 = false;
-boolean posAux2 = true;
+float x = 100; //<>//
+float y = 0;
+float alpha = 0;
 
-void strokeTest(float r, float x, float step){
-    a = 240 +  r * cos(pos/8);
-    b = 320 +  r * sin(pos/8);
-    stroke(155, 0, 0);
-    fill(155,0,0);
-    ellipse(a, b, 3, 3);
-    strokeCap(ROUND);
-
-    pos+=step;
+void setup() {
+  size(600, 600);
+  frameRate(60);
 }
 
-void setup(){
-  size(480, 640);
-
+void setUpCoordinateSystem() {
+  
+  // Translada a origem para o centro da tela
+  translate(width/2, height/2);
+  
+  // Configura linhas de referência
+  stroke(0);
+  strokeWeight(2);
+  line(0, -350, 0, 350);
+  line(-350, 0, 350, 0);
+  
+  // Inverte o sentido da coordenada y
+  scale(1,-1);
 }
-void draw(){
-  line(width/2, height, width/2, 0);
-  stroke(0, 0, 255);
-  line(0, height/2, width, height/2);
-  stroke(0, 255, 0);
-  strokeTest (r, x, -0.1);
 
-  if(a > (width/2) && posAux2 != posAux1){
-    posAux1 = true;
+void draw() {
+  setUpCoordinateSystem();
+  
+  // Configura a aparência da partícula
+  stroke(0, 0, 150);
+  strokeWeight(4);
+  
+  // Rotaciona o sistema em alpha graus
+  rotate(alpha);
+  
+  // Calcula qual deverá ser a próxima possição x na partícula
+  float newX = x * (1 + alpha/PI);
+  
+  // Verifica a particula chegou no ponto (-200, 0)
+  if (newX <= 200) {
+    // Desenha a linha percorrida pela partícula
+    point(newX, y);
+    alpha += PI/240;
   }
-   
-   if(a < (width/2) && posAux2 != posAux1){
-    posAux1 = false;
-  }
-
-  if(posAux2 == posAux1){
-     if(r != (2 * r)){
-       r = r + (rAux/120);
-     }
-     else{
-       posAux2 = !posAux2;
-       rAux = 4 * rAux;
-     }
-  }
-
 }
