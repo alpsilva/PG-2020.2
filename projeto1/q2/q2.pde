@@ -4,8 +4,8 @@ float firstArmLength = 100;
 float secondArmLength = 150;
 float firstArmAngle = PI;
 float secondArmAngle = PI;
-float firstArmAngularSpeed = - PI/240;
-float secondArmAngularSpeed = - PI/120;
+float firstArmAngularSpeed = - PI/480;
+float secondArmAngularSpeed = - PI/240;
 
 void setup() {
   size(800,600);
